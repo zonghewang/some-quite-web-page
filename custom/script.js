@@ -1,4 +1,4 @@
-let title = document.title;
+let title = document.querySelector('title');
 let yesButton = document.getElementById("yes");
 let noButton = document.getElementById("no");
 let questionText = document.getElementById("question");
@@ -15,16 +15,17 @@ document.addEventListener('touchmove', function(event) {
 const params = new URLSearchParams(window.location.search);
 let username = params.get("name");
 let subject = params.get("subject");
+let titleInput = params.get("title");
 
 // 限制用户名长度，避免页面样式崩坏
 const maxLength = 20;
 const safeUsername = username ? username.substring(0, maxLength) : "???";
+if (titleInput) {
+  title.textContent = titleInput;
+}
+
 
 if (subject) {
-  window.addEventListener("load", (event) => {
-    title = subject;
-  });
-
   questionText.innerText = subject;
 }
 // 防止 `null` 变成 `"null"`
