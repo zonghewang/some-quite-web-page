@@ -1,4 +1,4 @@
-let title = document.title
+let title = document.title;
 let yesButton = document.getElementById("yes");
 let noButton = document.getElementById("no");
 let questionText = document.getElementById("question");
