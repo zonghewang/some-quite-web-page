@@ -14,15 +14,18 @@ document.addEventListener('touchmove', function(event) {
 
 const params = new URLSearchParams(window.location.search);
 let username = params.get("name");
-let subgect = params.get("subgect");
+let subject = params.get("subject");
 
 // 限制用户名长度，避免页面样式崩坏
 const maxLength = 20;
 const safeUsername = username ? username.substring(0, maxLength) : "???";
 
-if (subgect) {
-  title = subgect;
-  questionText.innerText = subgect;
+if (subject) {
+  window.addEventListener("load", (event) => {
+    title = subject;
+  });
+
+  questionText.innerText = subject;
 }
 // 防止 `null` 变成 `"null"`
 if (username) {
