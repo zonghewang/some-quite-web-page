@@ -3,6 +3,8 @@ let yesButton = document.getElementById("yes");
 let noButton = document.getElementById("no");
 let questionText = document.getElementById("question");
 let mainImage = document.getElementById("mainImage");
+let description = document.querySelector('meta[name="description"]');
+let pic = document.querySelector('meta[property="og:image"]');
 
 // 禁止页面滑动
 document.addEventListener('touchmove', function(event) {
@@ -16,6 +18,8 @@ const params = new URLSearchParams(window.location.search);
 let username = params.get("name");
 let subject = params.get("subject");
 let titleInput = params.get("title");
+let descriptionInput = params.get("description");
+let picInput = params.get("pic");
 
 // 限制用户名长度，避免页面样式崩坏
 const maxLength = 20;
@@ -24,6 +28,13 @@ if (titleInput) {
   title.textContent = titleInput;
 }
 
+if (picInput) {
+  pic.setAttribute('content',picInput);
+}
+
+if (descriptionInput) {
+  description.setAttribute('content',descriptionInput);
+}
 
 if (subject) {
   questionText.innerText = subject;
