@@ -77,8 +77,8 @@ const noTexts = [
 noButton.addEventListener("click", function () {
   clickCount++;
 
-  // 让 Yes 变大，每次放大 1 倍
-  let yesSize = 1 + clickCount * 1.05;
+  // 让 Yes 变大，每次放大 0.5 倍
+  let yesSize = 1 + clickCount * 0.5;
   // let yesOffset = clickCount * 25;
   yesButton.style.transform = `scale(${yesSize})`;
   // yesButton.style.transform = `translateX(${yesOffset}px)`;
