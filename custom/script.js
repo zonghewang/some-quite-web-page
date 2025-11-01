@@ -88,7 +88,7 @@ noButton.addEventListener("click", function () {
   noButton.style.transform = `translateX(${noOffset}px)`;
 
   // 让图片和文字往上移动
-  let moveUp = clickCount * 8;
+  let moveUp = clickCount * 10;
   mainImage.style.transform = `translateY(-${moveUp}px)`;
   questionText.style.transform = `translateY(-${moveUp}px)`;
 
