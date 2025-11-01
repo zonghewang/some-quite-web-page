@@ -3,8 +3,16 @@ let yesButton = document.getElementById("yes");
 let noButton = document.getElementById("no");
 let questionText = document.getElementById("question");
 let mainImage = document.getElementById("mainImage");
+
 let description = document.querySelector('meta[name="description"]');
-let pic = document.querySelector('meta[property="og:image"]');
+
+let descriptionOG = document.querySelector('meta[property="og:description"]');
+let picOG = document.querySelector('meta[property="og:image"]');
+
+let pictwitter = document.querySelector('meta[name="twitter:image"]');
+
+let descriptionweichat = document.querySelector('meta[itemprop="description"]');
+let picweichat = document.querySelector('meta[itemprop="image"]');
 
 // 禁止页面滑动
 document.addEventListener('touchmove', function(event) {
@@ -29,11 +37,20 @@ if (titleInput) {
 }
 
 if (picInput) {
-  pic.setAttribute('content',picInput);
+  // 动态生成meta（针对SPA应用）
+  // 通过链接参数强制更新微信缓存
+  // 获取当前时间戳
+  var timestamp = new Date().getTime();
+
+  picOG.setAttribute('content',picInput+"?v="+timestamp);
+  pictwitter.setAttribute('content',picInput+"?v="+timestamp);
+  picweichat.setAttribute('content',picInput+"?v="+timestamp);
 }
 
 if (descriptionInput) {
   description.setAttribute('content',descriptionInput);
+  descriptionOG.setAttribute('content',descriptionInput);
+  descriptionweichat.setAttribute('content',descriptionInput);
 }
 
 if (subject) {
