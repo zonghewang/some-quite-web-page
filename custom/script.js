@@ -78,15 +78,17 @@ noButton.addEventListener("click", function () {
   clickCount++;
 
   // 让 Yes 变大，每次放大 1 倍
-  let yesSize = 1 + clickCount * 1.1;
+  let yesSize = 1 + clickCount * 1.05;
+  // let yesOffset = clickCount * 25;
   yesButton.style.transform = `scale(${yesSize})`;
+  // yesButton.style.transform = `translateX(${yesOffset}px)`;
 
-  // 挤压 No 按钮，每次右移 25px
+  // 挤压 No 按钮，每次右移 50px
   let noOffset = clickCount * 25;
   noButton.style.transform = `translateX(${noOffset}px)`;
 
   // 让图片和文字往上移动
-  let moveUp = clickCount * 7;
+  let moveUp = clickCount * 8;
   mainImage.style.transform = `translateY(-${moveUp}px)`;
   questionText.style.transform = `translateY(-${moveUp}px)`;
 
