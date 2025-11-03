@@ -109,7 +109,7 @@ class MysteryGiftApp {
       } else {
         this.stopPopups();
         if (this.popupCount >= this.maxPopups) {
-          this.showCompletionMessage();
+          // this.showCompletionMessage();
         }
       }
     }, 300);
@@ -124,7 +124,7 @@ class MysteryGiftApp {
     // 随机位置
     const screenWidth = window.innerWidth;
     const screenHeight = window.innerHeight;
-    const popupWidth = 200;
+    const popupWidth = 150;
     const popupHeight = 80;
     
     // 允许叠加，直接随机位置
