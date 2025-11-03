@@ -70,7 +70,7 @@ class MysteryGiftApp {
     this.floatBalls.style.display = 'flex';
     
     // 开始播放音乐
-    this.playMusic();
+    // this.playMusic();
     
     // 开始弹窗
     this.startPopups();
