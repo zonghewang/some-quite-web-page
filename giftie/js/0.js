@@ -99,7 +99,7 @@ eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// lo
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"static/img/bird.5e015696.png\";\n\n//# sourceURL=webpack:///./src/assets/images/bird.png?");
+eval("module.exports = __webpack_require__.p + \"img/bird.5e015696.png\";\n\n//# sourceURL=webpack:///./src/assets/images/bird.png?");
 
 /***/ }),
 
@@ -110,7 +110,7 @@ eval("module.exports = __webpack_require__.p + \"static/img/bird.5e015696.png\";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"static/img/cloud.e5950142.png\";\n\n//# sourceURL=webpack:///./src/assets/images/cloud.png?");
+eval("module.exports = __webpack_require__.p + \"img/cloud.e5950142.png\";\n\n//# sourceURL=webpack:///./src/assets/images/cloud.png?");
 
 /***/ }),
 
@@ -121,7 +121,7 @@ eval("module.exports = __webpack_require__.p + \"static/img/cloud.e5950142.png\"
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"static/img/love-heart.812d57c3.png\";\n\n//# sourceURL=webpack:///./src/assets/images/love-heart.png?");
+eval("module.exports = __webpack_require__.p + \"img/love-heart.812d57c3.png\";\n\n//# sourceURL=webpack:///./src/assets/images/love-heart.png?");
 
 /***/ }),
 

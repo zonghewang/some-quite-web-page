@@ -53,7 +53,7 @@ eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// lo
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"static/img/erkang-bottom.08ba27ef.png\";\n\n//# sourceURL=webpack:///./src/assets/images/erkang-bottom.png?");
+eval("module.exports = __webpack_require__.p + \"img/erkang-bottom.08ba27ef.png\";\n\n//# sourceURL=webpack:///./src/assets/images/erkang-bottom.png?");
 
 /***/ }),
 
@@ -64,7 +64,7 @@ eval("module.exports = __webpack_require__.p + \"static/img/erkang-bottom.08ba27
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"static/img/erkang-top.e35f93e1.png\";\n\n//# sourceURL=webpack:///./src/assets/images/erkang-top.png?");
+eval("module.exports = __webpack_require__.p + \"img/erkang-top.e35f93e1.png\";\n\n//# sourceURL=webpack:///./src/assets/images/erkang-top.png?");
 
 /***/ }),
 

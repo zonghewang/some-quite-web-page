@@ -53,7 +53,7 @@ eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// lo
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"static/img/active-block-bg.3beb3dc9.png\";\n\n//# sourceURL=webpack:///./src/assets/images/active-block-bg.png?");
+eval("module.exports = __webpack_require__.p + \"img/active-block-bg.3beb3dc9.png\";\n\n//# sourceURL=webpack:///./src/assets/images/active-block-bg.png?");
 
 /***/ }),
 
@@ -64,7 +64,7 @@ eval("module.exports = __webpack_require__.p + \"static/img/active-block-bg.3beb
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"static/img/block-bg.5c9b3231.png\";\n\n//# sourceURL=webpack:///./src/assets/images/block-bg.png?");
+eval("module.exports = __webpack_require__.p + \"img/block-bg.5c9b3231.png\";\n\n//# sourceURL=webpack:///./src/assets/images/block-bg.png?");
 
 /***/ }),
 
@@ -75,7 +75,7 @@ eval("module.exports = __webpack_require__.p + \"static/img/block-bg.5c9b3231.pn
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"static/img/button.7572d599.png\";\n\n//# sourceURL=webpack:///./src/assets/images/button.png?");
+eval("module.exports = __webpack_require__.p + \"img/button.7572d599.png\";\n\n//# sourceURL=webpack:///./src/assets/images/button.png?");
 
 /***/ }),
 

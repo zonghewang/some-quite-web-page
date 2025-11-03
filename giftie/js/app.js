@@ -64,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "static/js/" + ({}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "js/" + ({}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -325,7 +325,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"static/img/bg.94640b8e.jpeg\";\n\n//# sourceURL=webpack:///./src/assets/images/bg.jpeg?");
+eval("module.exports = __webpack_require__.p + \"img/bg.94640b8e.jpeg\";\n\n//# sourceURL=webpack:///./src/assets/images/bg.jpeg?");
 
 /***/ }),
 
