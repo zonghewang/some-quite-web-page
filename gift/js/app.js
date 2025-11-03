@@ -3,7 +3,7 @@ class MysteryGiftApp {
   constructor() {
     this.isPlaying = false;
     this.popupCount = 0;
-    this.maxPopups = 400;
+    this.maxPopups = 4000;
     this.popupInterval = null;
     // this.audio = document.getElementById('bgMusic');
     this.startBackdrop = document.getElementById('start-backdrop');
