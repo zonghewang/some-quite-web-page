@@ -9,7 +9,7 @@ class MysteryGiftApp {
     this.startBackdrop = document.getElementById('start-backdrop');
     this.confirmBtn = document.getElementById('confirm-btn');
     this.popupLayer = document.getElementById('popup-layer');
-    this.floatBalls = document.getElementById('float-balls');
+    // this.floatBalls = document.getElementById('float-balls');
     
     this.init();
   }
@@ -67,7 +67,7 @@ class MysteryGiftApp {
     this.startBackdrop.setAttribute('aria-hidden', 'true');
     
     // 显示浮动小球
-    this.floatBalls.style.display = 'flex';
+    // this.floatBalls.style.display = 'flex';
     
     // 开始播放音乐
     // this.playMusic();
