@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>一份神秘礼物🎃</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="css/css2?family=Noto+Sans+SC:wght@400%3B600%3B800&amp;display=swap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+  <div id="app">
+    <div class="modal-backdrop" id="start-backdrop" aria-hidden="false">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="titlebar">
+          <span class="icon">🎃</span>
+          <span class="title" id="modal-title">神秘的礼物</span>
+        </div>
+        <div class="content">您有一份神秘礼物，确定要打开吗？</div>
+
+        <div class="actions">
+          <button class="btn primary" id="confirm-btn" autofocus>确定</button>
+        </div>
+      </div>
+    </div>
+    <div id="popup-layer" aria-live="polite" aria-atomic="false"></div>
+
+    
+
+    <!-- 右下角的两个透明小球 -->
+    <div id="float-balls" style="display: none;">
+      <a href="这里是更多跳转的地方" target="_blank" class="float-ball" id="ball-more">
+        <span>更多</span>
+      </a>
+    </div>
+  </div>
+
+
+  <audio id="bgMusic" preload="auto">
+
+    <source src=" 这里写音乐的链接哈">
+  </audio>
+  <script src="js/utils.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
