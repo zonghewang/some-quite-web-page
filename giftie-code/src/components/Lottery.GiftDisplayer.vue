@@ -32,7 +32,7 @@ export default {
 .erkang-bg-top {
   width: 306.5px;
   height: 220px;
-  background-image: url(../assets/images/erkang-top.png);
+  background-image: url(../assets/img/erkang-top.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 1;
@@ -42,7 +42,7 @@ export default {
 .erkang-bg-bottom {
   width: 385px;
   height: 570px;
-  background-image: url(../assets/images/erkang-bottom.png);
+  background-image: url(../assets/img/erkang-bottom.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 2;

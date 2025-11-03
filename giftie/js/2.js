@@ -31,7 +31,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../assets/images/erkang-top.png */ \"./src/assets/images/erkang-top.png\");\nvar ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../assets/images/erkang-bottom.png */ \"./src/assets/images/erkang-bottom.png\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);\n// Module\nexports.push([module.i, \"\\n.lottery-gift-displayer-component[data-v-26ae169a] {\\n  background-color: #fad3e6;\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center;\\n}\\n.erkang-bg-top[data-v-26ae169a] {\\n  width: 306.5px;\\n  height: 220px;\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n  background-size: 100% 100%;\\n  background-repeat: no-repeat;\\n  z-index: 1;\\n  position: relative;\\n  top: 40px;\\n}\\n.erkang-bg-bottom[data-v-26ae169a] {\\n  width: 385px;\\n  height: 570px;\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \");\\n  background-size: 100% 100%;\\n  background-repeat: no-repeat;\\n  z-index: 2;\\n  position: relative;\\n  top: -40px;\\n  padding: 120px 70px 40px 70px;\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: space-around;\\n  align-items: center;\\n}\\n.border-area[data-v-26ae169a] {\\n  width: 170px;\\n  height: 170px;\\n  background-color: white;\\n  border-radius: 7px;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n}\\n.gift-image[data-v-26ae169a] {\\n  display: block;\\n  width: 160px;\\n  height: 160px;\\n}\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/components/Lottery.GiftDisplayer.vue?./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-2!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../assets/img/erkang-top.png */ \"./src/assets/img/erkang-top.png\");\nvar ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../assets/img/erkang-bottom.png */ \"./src/assets/img/erkang-bottom.png\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);\n// Module\nexports.push([module.i, \"\\n.lottery-gift-displayer-component[data-v-26ae169a] {\\n  background-color: #fad3e6;\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center;\\n}\\n.erkang-bg-top[data-v-26ae169a] {\\n  width: 306.5px;\\n  height: 220px;\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n  background-size: 100% 100%;\\n  background-repeat: no-repeat;\\n  z-index: 1;\\n  position: relative;\\n  top: 40px;\\n}\\n.erkang-bg-bottom[data-v-26ae169a] {\\n  width: 385px;\\n  height: 570px;\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \");\\n  background-size: 100% 100%;\\n  background-repeat: no-repeat;\\n  z-index: 2;\\n  position: relative;\\n  top: -40px;\\n  padding: 120px 70px 40px 70px;\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: space-around;\\n  align-items: center;\\n}\\n.border-area[data-v-26ae169a] {\\n  width: 170px;\\n  height: 170px;\\n  background-color: white;\\n  border-radius: 7px;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n}\\n.gift-image[data-v-26ae169a] {\\n  display: block;\\n  width: 160px;\\n  height: 160px;\\n}\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/components/Lottery.GiftDisplayer.vue?./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-oneOf-1-2!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -46,25 +46,25 @@ eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// lo
 
 /***/ }),
 
-/***/ "./src/assets/images/erkang-bottom.png":
-/*!*********************************************!*\
-  !*** ./src/assets/images/erkang-bottom.png ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"img/erkang-bottom.08ba27ef.png\";\n\n//# sourceURL=webpack:///./src/assets/images/erkang-bottom.png?");
-
-/***/ }),
-
-/***/ "./src/assets/images/erkang-top.png":
+/***/ "./src/assets/img/erkang-bottom.png":
 /*!******************************************!*\
-  !*** ./src/assets/images/erkang-top.png ***!
+  !*** ./src/assets/img/erkang-bottom.png ***!
   \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"img/erkang-top.e35f93e1.png\";\n\n//# sourceURL=webpack:///./src/assets/images/erkang-top.png?");
+eval("module.exports = __webpack_require__.p + \"img/erkang-bottom.08ba27ef.png\";\n\n//# sourceURL=webpack:///./src/assets/img/erkang-bottom.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/erkang-top.png":
+/*!***************************************!*\
+  !*** ./src/assets/img/erkang-top.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/erkang-top.e35f93e1.png\";\n\n//# sourceURL=webpack:///./src/assets/img/erkang-top.png?");
 
 /***/ }),
 

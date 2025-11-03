@@ -42,7 +42,7 @@ export default {
         fonts: [],
         imgs: [
           {
-            src: require("../assets/images/button.png"),
+            src: require("../assets/img/button.png"),
             width: "100%",
             top: "0",
           },
@@ -80,8 +80,8 @@ export default {
           fonts: [{ text: item.name, top: item.top }],
           imgs: [
             {
-              src: require('../assets/images/block-bg.png'),
-              activeSrc: require('../assets/images/active-block-bg.png'),
+              src: require('../assets/img/block-bg.png'),
+              activeSrc: require('../assets/img/active-block-bg.png'),
               width: '100%',
               height: '100%',
             },

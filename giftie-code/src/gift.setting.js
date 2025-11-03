@@ -29,15 +29,15 @@ export const homeConfig = {
 
 // 礼物清单
 // 字段 key 不用改，只要保证每个礼物的 key 字段是不同的即可
-// 图片放在 public/images 中，建议是正方形，否则影响视觉体验
+// 图片放在 public/img 中，建议是正方形，否则影响视觉体验
 // name 是礼物的全称；alias 是礼物的简称（用来显示在抽奖方格里）
 export const gifts = [
-  { key: 'q', name: '1元红包', alias: '1', image: 'images/6.png',  description: '一心一意只为你' },
-  { key: 'w', name: '50元红包', alias: '50', image: 'images/6.png',  description: '来50元，够吃一顿了' },
-  { key: 'e', name: '88元红包', alias: '88', image: 'images/6.png',  description: '小小的发一下' },
-  { key: 'r', name: '520红包', alias: '520', image: 'images/6.png',  description: '“想给你唱一百首情歌”' },
-  { key: 't', name: '1111红包', alias: '1111', image: 'images/6.png',  description: '“一生一世只选择你”' },
-  { key: 'y', name: '1314红包', alias: '1314', image: 'images/6.png',  description: '“从今往后，我都会在你旁边”' },
-  { key: 'u', name: '8888红包', alias: '8888', image: 'images/6.png',  description: '“发发发”' },
-  { key: 'i', name: '谢谢惠顾', alias: '谢谢惠顾', image: 'images/780.jpg',  description: '也许这次运气不太好，下次再试试吧' },
+  { key: 'q', name: '1元红包', alias: '1', image: 'img/6.png',  description: '一心一意只为你' },
+  { key: 'w', name: '50元红包', alias: '50', image: 'img/6.png',  description: '来50元，够吃一顿了' },
+  { key: 'e', name: '88元红包', alias: '88', image: 'img/6.png',  description: '小小的发一下' },
+  { key: 'r', name: '520红包', alias: '520', image: 'img/6.png',  description: '“想给你唱一百首情歌”' },
+  { key: 't', name: '1111红包', alias: '1111', image: 'img/6.png',  description: '“一生一世只选择你”' },
+  { key: 'y', name: '1314红包', alias: '1314', image: 'img/6.png',  description: '“从今往后，我都会在你旁边”' },
+  { key: 'u', name: '8888红包', alias: '8888', image: 'img/6.png',  description: '“发发发”' },
+  { key: 'i', name: '谢谢惠顾', alias: '谢谢惠顾', image: 'img/780.jpg',  description: '也许这次运气不太好，下次再试试吧' },
 ];

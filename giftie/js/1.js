@@ -8,7 +8,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var xijs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! xijs */ \"./node_modules/xijs/dist/index.esm.js\");\n/* harmony import */ var _gift_setting_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../gift.setting.js */ \"./src/gift.setting.js\");\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  name: 'LotteryTurntable',\n  data() {\n    this.defaultStyle = {\n      fontColor: \"#AFFFD7\",\n      fontSize: \"10px\",\n      lineHeight: \"13px\",\n      wordWrap: false\n    };\n    this.activeStyle = {\n      fontColor: \"#fff\"\n    };\n    this.blocks = [{\n      padding: \"10px\",\n      background: \"rgba(0, 0, 0, 0)\",\n      borderRadius: \"10px\"\n    }];\n    this.buttons = [{\n      x: 1,\n      y: 1,\n      background: \"rgba(0, 0, 0, 0)\",\n      fonts: [],\n      imgs: [{\n        src: __webpack_require__(/*! ../assets/images/button.png */ \"./src/assets/images/button.png\"),\n        width: \"100%\",\n        top: \"0\"\n      }]\n    }];\n    return {\n      prizes: []\n    };\n  },\n  methods: {\n    getGiftList() {\n      const prizes = [];\n      let axis = [[0, 0], [1, 0], [2, 0], [0, 1], [2, 1], [0, 2], [1, 2], [2, 2]];\n      let data = _gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"gifts\"].map(item => {\n        return {\n          fullName: item.name,\n          name: item.alias,\n          img: item.image,\n          top: '70%'\n        };\n      });\n\n      // let data = [];\n      data.forEach((item, index) => {\n        prizes.push({\n          x: axis[index][0],\n          y: axis[index][1],\n          title: item.name,\n          fullName: item.fullName,\n          fonts: [{\n            text: item.name,\n            top: item.top\n          }],\n          imgs: [{\n            src: __webpack_require__(/*! ../assets/images/block-bg.png */ \"./src/assets/images/block-bg.png\"),\n            activeSrc: __webpack_require__(/*! ../assets/images/active-block-bg.png */ \"./src/assets/images/active-block-bg.png\"),\n            width: '100%',\n            height: '100%'\n          }, {\n            src: item.img,\n            width: '70%',\n            top: '3%'\n          }]\n        });\n      });\n      this.prizes = prizes;\n    },\n    startCallBack() {\n      this.$refs.luckyGrid.play();\n      let targetGiftIndex = _gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"homeConfig\"].targetGiftIndex;\n      if (!!targetGiftIndex === false) {\n        targetGiftIndex = Math.random() * 8 >> 0;\n      }\n      setTimeout(() => {\n        this.$refs.luckyGrid.stop(targetGiftIndex);\n      }, _gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"homeConfig\"].timeout);\n    },\n    endCallBack(prize) {\n      const {\n        imgs,\n        fullName\n      } = prize;\n      const imageUrl = imgs[1].src;\n      const nextDate = new Date().getTime() + +1000 * 60 * 60 * 24;\n      xijs__WEBPACK_IMPORTED_MODULE_0__[\"store\"].set(_gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"GLOBAL_KEYS\"].EXIST_KEY, '1', nextDate);\n      xijs__WEBPACK_IMPORTED_MODULE_0__[\"store\"].set(_gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"GLOBAL_KEYS\"].NAME_KEY, fullName, nextDate);\n      xijs__WEBPACK_IMPORTED_MODULE_0__[\"store\"].set(_gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"GLOBAL_KEYS\"].IMAGE_KEY, imageUrl, nextDate);\n      xijs__WEBPACK_IMPORTED_MODULE_0__[\"store\"].set(_gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"GLOBAL_KEYS\"].NEXT_DATE, nextDate, nextDate);\n      setTimeout(() => {\n        this.$emit('success');\n      }, 1200);\n    }\n  },\n  mounted() {\n    this.getGiftList();\n  }\n});\n\n//# sourceURL=webpack:///./src/components/Lottery.Turntable.vue?./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var xijs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! xijs */ \"./node_modules/xijs/dist/index.esm.js\");\n/* harmony import */ var _gift_setting_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../gift.setting.js */ \"./src/gift.setting.js\");\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  name: 'LotteryTurntable',\n  data() {\n    this.defaultStyle = {\n      fontColor: \"#AFFFD7\",\n      fontSize: \"10px\",\n      lineHeight: \"13px\",\n      wordWrap: false\n    };\n    this.activeStyle = {\n      fontColor: \"#fff\"\n    };\n    this.blocks = [{\n      padding: \"10px\",\n      background: \"rgba(0, 0, 0, 0)\",\n      borderRadius: \"10px\"\n    }];\n    this.buttons = [{\n      x: 1,\n      y: 1,\n      background: \"rgba(0, 0, 0, 0)\",\n      fonts: [],\n      imgs: [{\n        src: __webpack_require__(/*! ../assets/img/button.png */ \"./src/assets/img/button.png\"),\n        width: \"100%\",\n        top: \"0\"\n      }]\n    }];\n    return {\n      prizes: []\n    };\n  },\n  methods: {\n    getGiftList() {\n      const prizes = [];\n      let axis = [[0, 0], [1, 0], [2, 0], [0, 1], [2, 1], [0, 2], [1, 2], [2, 2]];\n      let data = _gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"gifts\"].map(item => {\n        return {\n          fullName: item.name,\n          name: item.alias,\n          img: item.image,\n          top: '70%'\n        };\n      });\n\n      // let data = [];\n      data.forEach((item, index) => {\n        prizes.push({\n          x: axis[index][0],\n          y: axis[index][1],\n          title: item.name,\n          fullName: item.fullName,\n          fonts: [{\n            text: item.name,\n            top: item.top\n          }],\n          imgs: [{\n            src: __webpack_require__(/*! ../assets/img/block-bg.png */ \"./src/assets/img/block-bg.png\"),\n            activeSrc: __webpack_require__(/*! ../assets/img/active-block-bg.png */ \"./src/assets/img/active-block-bg.png\"),\n            width: '100%',\n            height: '100%'\n          }, {\n            src: item.img,\n            width: '70%',\n            top: '3%'\n          }]\n        });\n      });\n      this.prizes = prizes;\n    },\n    startCallBack() {\n      this.$refs.luckyGrid.play();\n      let targetGiftIndex = _gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"homeConfig\"].targetGiftIndex;\n      if (!!targetGiftIndex === false) {\n        targetGiftIndex = Math.random() * 8 >> 0;\n      }\n      setTimeout(() => {\n        this.$refs.luckyGrid.stop(targetGiftIndex);\n      }, _gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"homeConfig\"].timeout);\n    },\n    endCallBack(prize) {\n      const {\n        imgs,\n        fullName\n      } = prize;\n      const imageUrl = imgs[1].src;\n      const nextDate = new Date().getTime() + +1000 * 60 * 60 * 24;\n      xijs__WEBPACK_IMPORTED_MODULE_0__[\"store\"].set(_gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"GLOBAL_KEYS\"].EXIST_KEY, '1', nextDate);\n      xijs__WEBPACK_IMPORTED_MODULE_0__[\"store\"].set(_gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"GLOBAL_KEYS\"].NAME_KEY, fullName, nextDate);\n      xijs__WEBPACK_IMPORTED_MODULE_0__[\"store\"].set(_gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"GLOBAL_KEYS\"].IMAGE_KEY, imageUrl, nextDate);\n      xijs__WEBPACK_IMPORTED_MODULE_0__[\"store\"].set(_gift_setting_js__WEBPACK_IMPORTED_MODULE_1__[\"GLOBAL_KEYS\"].NEXT_DATE, nextDate, nextDate);\n      setTimeout(() => {\n        this.$emit('success');\n      }, 1200);\n    }\n  },\n  mounted() {\n    this.getGiftList();\n  }\n});\n\n//# sourceURL=webpack:///./src/components/Lottery.Turntable.vue?./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -46,36 +46,36 @@ eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// lo
 
 /***/ }),
 
-/***/ "./src/assets/images/active-block-bg.png":
-/*!***********************************************!*\
-  !*** ./src/assets/images/active-block-bg.png ***!
-  \***********************************************/
+/***/ "./src/assets/img/active-block-bg.png":
+/*!********************************************!*\
+  !*** ./src/assets/img/active-block-bg.png ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"img/active-block-bg.3beb3dc9.png\";\n\n//# sourceURL=webpack:///./src/assets/images/active-block-bg.png?");
+eval("module.exports = __webpack_require__.p + \"img/active-block-bg.3beb3dc9.png\";\n\n//# sourceURL=webpack:///./src/assets/img/active-block-bg.png?");
 
 /***/ }),
 
-/***/ "./src/assets/images/block-bg.png":
-/*!****************************************!*\
-  !*** ./src/assets/images/block-bg.png ***!
-  \****************************************/
+/***/ "./src/assets/img/block-bg.png":
+/*!*************************************!*\
+  !*** ./src/assets/img/block-bg.png ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"img/block-bg.5c9b3231.png\";\n\n//# sourceURL=webpack:///./src/assets/images/block-bg.png?");
+eval("module.exports = __webpack_require__.p + \"img/block-bg.5c9b3231.png\";\n\n//# sourceURL=webpack:///./src/assets/img/block-bg.png?");
 
 /***/ }),
 
-/***/ "./src/assets/images/button.png":
-/*!**************************************!*\
-  !*** ./src/assets/images/button.png ***!
-  \**************************************/
+/***/ "./src/assets/img/button.png":
+/*!***********************************!*\
+  !*** ./src/assets/img/button.png ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"img/button.7572d599.png\";\n\n//# sourceURL=webpack:///./src/assets/images/button.png?");
+eval("module.exports = __webpack_require__.p + \"img/button.7572d599.png\";\n\n//# sourceURL=webpack:///./src/assets/img/button.png?");
 
 /***/ }),
 
