@@ -5,7 +5,7 @@ class MysteryGiftApp {
     this.popupCount = 0;
     this.maxPopups = 400;
     this.popupInterval = null;
-    this.audio = document.getElementById('bgMusic');
+    // this.audio = document.getElementById('bgMusic');
     this.startBackdrop = document.getElementById('start-backdrop');
     this.confirmBtn = document.getElementById('confirm-btn');
     this.popupLayer = document.getElementById('popup-layer');
@@ -16,7 +16,7 @@ class MysteryGiftApp {
   
   init() {
     this.bindEvents();
-    this.setupAudio();
+    // this.setupAudio();
   }
   
   bindEvents() {
