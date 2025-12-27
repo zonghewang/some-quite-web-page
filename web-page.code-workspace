@@ -5,6 +5,7 @@
 		}
 	],
 	"settings": {
-		"Codegeex.CommitMessageStyle": "ConventionalCommits"
+		"Codegeex.CommitMessageStyle": "ConventionalCommits",
+		"Codegeex.GenerationPreference": "line by line"
 	}
 }

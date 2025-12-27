@@ -202,7 +202,7 @@
                 const monthsDifference = (retirementDate - originalRetirementDate) / (1000 * 60 * 60 * 24 * 30.44);
                 document.getElementById('additionalMonths').innerText = `${Math.floor(monthsDifference)}个月`;
 
-                document.getElementById('countdownTimerLabel').textContent = `距离${birthYear}年${birthMonth}月退休还剩：`;
+                document.getElementById('countdownTimerLabel').textContent = `距离${retirementDate.getFullYear()}年${retirementDate.getMonth() + 1}月退休还剩：`;
                 document.getElementById('countdownTimerLabel').style.display = 'block';
                 startCountdown(retirementDate);
             } else {
