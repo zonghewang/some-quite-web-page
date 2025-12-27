@@ -153,7 +153,9 @@
     </div>
 
     <script>
+        let intervalId;
         document.getElementById('calculateBtn').addEventListener('click', function() {
+            clearInterval(intervalId);
             const genderType = document.getElementById('gender').value;
             const birthDateValue = document.getElementById('birthDate').value;
             if (birthDateValue) {
@@ -217,7 +219,6 @@
 
         function startCountdown(endTime) {
             const countdownElement = document.getElementById('countdown');
-            let intervalId;
 
             function updateCountdown() {
                 const now = new Date().getTime();
