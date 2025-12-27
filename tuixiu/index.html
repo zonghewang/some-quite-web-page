@@ -143,7 +143,7 @@
                     </tbody>
                 </table>
                 <div id="countdownContainer" class="countdown-container">
-                    <br><div id="countdownTimerLabel" class="timer-label" style="display:none;">距离退休还剩：</div>
+                    <br><div id="countdownTimerLabel" class="timer-label" style="display:none;">距离退休还剩</div>
                     <div id="countdown" class="scoreboard"></div>
                 </div>
                 <button id="fullscreenBtn" class="fullscreen-btn">全屏显示倒计时</button>
@@ -204,7 +204,7 @@
                 const monthsDifference = (retirementDate - originalRetirementDate) / (1000 * 60 * 60 * 24 * 30.44);
                 document.getElementById('additionalMonths').innerText = `${Math.floor(monthsDifference)}个月`;
 
-                document.getElementById('countdownTimerLabel').textContent = `距离${retirementDate.getFullYear()}年${retirementDate.getMonth() + 1}月退休还剩：`;
+                document.getElementById('countdownTimerLabel').textContent = `距离${retirementDate.getFullYear()}年${retirementDate.getMonth() + 1}月退休还剩`;
                 document.getElementById('countdownTimerLabel').style.display = 'block';
                 startCountdown(retirementDate);
             } else {
@@ -309,7 +309,7 @@
                 document.getElementById('countdownTimerLabel').style.display = 'block';
             } else {
                 document.getElementById('countdownContainer').classList.remove('fullscreen-scoreboard');
-                document.getElementById('countdownTimerLabel').style.display = 'none';
+                // document.getElementById('countdownTimerLabel').style.display = 'none';
             }
         });
     </script>
